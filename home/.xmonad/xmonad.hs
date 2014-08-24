@@ -34,6 +34,7 @@ main = do
       [ ((mod4Mask, xK_a), spawn "termite")
       , ((mod4Mask, xK_Return), spawn "termite")
       , ((mod4Mask, xK_b), sendMessage ToggleStruts)
+      , ((mod4Mask, xK_m), spawn "passmenu")
       , ((0 , xF86XK_AudioRaiseVolume), spawn "pactl set-sink-volume 1 +3%")
       , ((0 , xF86XK_AudioLowerVolume), spawn "pactl set-sink-volume 1 -- -3%")
       , ((0 , xF86XK_AudioMute), spawn "pactl set-sink-mute 1 toggle")
